@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Me</title>
+    <title>Kevin Llau | About Me</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
@@ -12,11 +12,37 @@
             margin: 0;
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #1f1c2c, #928DAB);
-            height: 100vh;
+            color: white;
+        }
+
+        /* ===== NAVIGATION BAR ===== */
+        .navbar {
+            background: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1f1c2c;
+            margin-left: 25px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #6c63ff;
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .container {
+            height: calc(100vh - 80px);
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
         }
 
         .card {
@@ -45,39 +71,30 @@
             line-height: 1.6;
             margin-top: 20px;
         }
-
-        .button {
-            margin-top: 25px;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 30px;
-            background: white;
-            color: #1f1c2c;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: 0.3s;
-        }
-
-        .button:hover {
-            background: #ddd;
-            transform: scale(1.05);
-        }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>Kevin Llau</h1>
-        <h2>Student Developer</h2>
+    <!-- NAV BAR -->
+    <div class="navbar">
+        <div><strong>Kevin Llau</strong></div>
+        <div class="nav-links">
+            <a href="index.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
 
-        <p>
-            I build coding projects using Python and web development.
-            I enjoy solving problems, building games, and learning new technologies.
-        </p>
-
-        <a href="projects.html" class="button">View My Projects</a>
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <div class="card">
+            <h1>Kevin Llau</h1>
+            <h2>Coding Student</h2>
+            <p>
+                Hello! I am a student in Honors Computer Science and have learned how to use block code and python.
+                Switch between the tabs to view my projects and contact.
+            </p>
+        </div>
     </div>
 
 </body>
